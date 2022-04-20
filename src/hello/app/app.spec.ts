@@ -1,4 +1,4 @@
-import { selectComponent } from '@mdi/element';
+import { selectComponent, getProps } from '@pictogrammers/element';
 
 import './app';
 import HelloApp from './app';
@@ -23,8 +23,7 @@ describe('hello-app', () => {
   });
 
   it('should only expose known props', () => {
-    const { symbols } = customElements.get(HELLO_APP);
-    const props = Object.keys(symbols);
+    const props = getProps(HELLO_APP);
     expect(props.length).toBe(0);
     // Ex: expect(props).toContain('attribute');
   });

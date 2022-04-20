@@ -1,4 +1,4 @@
-import { selectComponent } from '@mdi/element';
+import { selectComponent, getProps } from '@pictogrammers/element';
 
 import './world';
 import HelloWorld from './world';
@@ -25,8 +25,7 @@ describe('hello-world', () => {
   });
 
   it('should only expose known props', () => {
-    const { symbols } = customElements.get(HELLO_WORLD);
-    const props = Object.keys(symbols);
+    const props = getProps(HELLO_WORLD);
     expect(props.length).toBe(1);
     expect(props).toContain('message');
   });

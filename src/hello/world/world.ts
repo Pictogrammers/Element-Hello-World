@@ -1,4 +1,4 @@
-import { Component, Prop, Part } from '@mdi/element';
+import { Component, Prop, Part } from '@pictogrammers/element';
 
 import template from './world.html';
 import style from './world.css';

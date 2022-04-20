@@ -1,6 +1,6 @@
-# Hello World - @mdi/element
+# Hello World - @pictogrammers/element
 
-An example repo for `@mdi/element`.
+An example repo for `@pictogrammers/element`.
 
 ```bash
 npm install
