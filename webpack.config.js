@@ -5,7 +5,7 @@ module.exports = config({
   dist: 'dist',
   watch: [],
   before: (components, mode) => {
-    console.log(`${components.length} Components`);
+    console.log('Components \x1b[32m%s\x1b[0m', components.length);
   },
   after: (components, mode) => {
     // Nothing

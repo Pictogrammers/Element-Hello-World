@@ -22,7 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "@pictogrammers/element": "0.0.23",
-    "@pictogrammers/element-webpack": "^0.1.4",
+    "@pictogrammers/element-webpack": "^0.1.5",
     "@types/jest": "^27.4.1",
     "@types/js-yaml": "^4.0.5",
     "cross-env": "^7.0.3",
