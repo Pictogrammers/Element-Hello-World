@@ -5,9 +5,10 @@ module.exports = config({
   dist: 'dist',
   watch: [],
   before: (components, mode) => {
+    // Components + GreenText(# of Components)
     console.log('Components \x1b[32m%s\x1b[0m', components.length);
   },
   after: (components, mode) => {
-    // Nothing
+    // Ran after every compilation
   }
 });
