@@ -1,12 +1,15 @@
 const config = require('@pictogrammers/element-webpack');
 
+const bold = (text) => '\033[1m' + text + '\033[0m';
+const green = (text) => '\x1b[32m' + text + '\x1b[0m';
+
 module.exports = config({
   port: 3000,
   dist: 'dist',
   watch: [],
   before: (components, mode) => {
     // Components + GreenText(# of Components)
-    console.log('Components \x1b[32m%s\x1b[0m', components.length);
+    console.log('Components', bold(green(components.length)));
   },
   after: (components, mode) => {
     // Ran after every compilation
