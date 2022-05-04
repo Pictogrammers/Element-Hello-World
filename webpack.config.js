@@ -7,11 +7,11 @@ module.exports = config({
   port: 3000,
   dist: 'dist',
   watch: [],
-  before: (components, mode) => {
+  before: (components, args, mode) => {
     // Components + GreenText(# of Components)
     console.log('Components', bold(green(components.length)));
   },
-  after: (components, mode) => {
+  after: (components, args, mode) => {
     // Ran after every compilation
   }
 });
