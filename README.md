@@ -1,6 +1,6 @@
 # Hello World - @pictogrammers/element
 
-An example repo for `@pictogrammers/element`.
+An example application for [`@pictogrammers/element`](https://github.com/Pictogrammers/Element/).
 
 ```bash
 npm install
