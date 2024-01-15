@@ -6,6 +6,7 @@ const green = (text) => '\x1b[32m' + text + '\x1b[0m';
 module.exports = config({
   port: 3000,
   dist: 'dist',
+  // mode: 'production',
   watch: [],
   before: (components, args, mode) => {
     // Components + GreenText(# of Components)
