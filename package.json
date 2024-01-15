@@ -23,7 +23,7 @@
   "devDependencies": {
     "@pictogrammers/element": "0.0.30",
     "@pictogrammers/element-webpack": "^0.1.26",
-    "@pictogrammers/element-jest": "^0.1.4",
+    "@pictogrammers/element-jest": "^0.1.7",
     "typescript": "^5.3.2"
   }
 }
