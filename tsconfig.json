@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2017",
-    "lib": ["ES2017", "ES5", "ES6", "DOM"],
+    "module": "ES6",
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "lib": ["ES2020", "ES5", "ES6", "DOM"],
     "baseUrl": "src",
     "sourceMap": true,
     "experimentalDecorators": true,

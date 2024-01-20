@@ -26,14 +26,15 @@ describe('hello-world', () => {
 
   it('should only expose known props', () => {
     const props = getProps(HELLO_WORLD);
-    expect(props.length).toBe(1);
+    expect(props.length).toBe(2);
     expect(props).toContain('message');
+    expect(props).toContain('count');
   });
 
   it('should default message', () => {
     const component = selectComponent<HelloWorld>(HELLO_WORLD);
     const { $message } = component;
-    expect($message.innerText).toBe(DEFAULT_MESSAGE);
+    expect($message.textContent).toBe(DEFAULT_MESSAGE);
   });
 
   it('should set message to "Hello World!"', async () => {
@@ -42,7 +43,7 @@ describe('hello-world', () => {
 
     const message = 'Hello World!';
     component.message = message;
-    expect($message.innerText).toBe(message);
+    expect($message.textContent).toBe(message);
   });
 
 });

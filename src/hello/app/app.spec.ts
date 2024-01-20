@@ -31,7 +31,7 @@ describe('hello-app', () => {
   it('should have a title set', () => {
     const component = selectComponent<HelloApp>(HELLO_APP);
     const { $title } = component;
-    expect($title.innerText).toEqual('Sample App');
+    expect($title.textContent).toEqual('Sample App');
   });
 
 });

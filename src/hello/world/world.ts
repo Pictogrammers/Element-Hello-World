@@ -12,12 +12,17 @@ const DEFAULT_MESSAGE = 'None';
 })
 export default class HelloWorld extends HTMLElement {
   @Prop() message: string = DEFAULT_MESSAGE;
+  @Prop() count: number = 0;
 
   @Part() $message: HTMLSpanElement;
+  @Part() $count: HTMLSpanElement;
 
   render(changes) {
     if (changes.message) {
-      this.$message.innerText = this.message;
+      this.$message.textContent = this.message;
+    }
+    if (changes.count) {
+      this.$count.textContent = `${this.count}`;
     }
   }
 }

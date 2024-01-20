@@ -1,9 +1,9 @@
-const config = require('@pictogrammers/element-webpack');
+import config from '@pictogrammers/element-webpack';
 
 const bold = (text) => '\x1b[1m' + text + '\x1b[0m';
 const green = (text) => '\x1b[32m' + text + '\x1b[0m';
 
-module.exports = config({
+export default config({
   port: 3000,
   dist: 'dist',
   // mode: 'production',

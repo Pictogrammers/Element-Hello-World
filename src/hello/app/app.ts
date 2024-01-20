@@ -3,6 +3,8 @@ import { Component, Part } from '@pictogrammers/element';
 import template from './app.html';
 import style from './app.css';
 
+import HelloWorld from './../world/world';
+
 @Component({
   selector: 'hello-app',
   style,
@@ -10,9 +12,14 @@ import style from './app.css';
 })
 export default class HelloApp extends HTMLElement {
   @Part() $title: HTMLSpanElement;
+  @Part() $button: HTMLButtonElement;
+  @Part() $helloWorld: HelloWorld;
 
   connectedCallback() {
-    this.$title.innerText = 'Sample App';
+    this.$title.textContent = 'Sample App';
+    this.$button.addEventListener('click', () => {
+      this.$helloWorld.count++;
+    });
   }
 
   render(changes) {
