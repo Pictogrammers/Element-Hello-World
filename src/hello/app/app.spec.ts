@@ -1,6 +1,7 @@
 import { selectComponent, getProps } from '@pictogrammers/element';
 
 import './app';
+import '../world/world';
 import HelloApp from './app';
 
 const HELLO_APP = 'hello-app';
@@ -28,8 +29,9 @@ describe('hello-app', () => {
     // Ex: expect(props).toContain('attribute');
   });
 
-  it('should have a title set', () => {
-    const component = selectComponent<HelloApp>(HELLO_APP);
+  it('should have a title set', async () => {
+    // To fix dynamically import all shadowroot components!!! hello-world
+    const component = await selectComponent<HelloApp>(HELLO_APP);
     const { $title } = component;
     expect($title.textContent).toEqual('Sample App');
   });

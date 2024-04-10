@@ -37,7 +37,7 @@ describe('hello-world', () => {
     expect($message.textContent).toBe(DEFAULT_MESSAGE);
   });
 
-  it('should set message to "Hello World!"', async () => {
+  it('should set message to "Hello World!"', () => {
     const component = selectComponent<HelloWorld>(HELLO_WORLD);
     const { $message } = component;
 
