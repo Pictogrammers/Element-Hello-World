@@ -1,9 +1,10 @@
-import { Component, Prop, Part } from '@pictogrammers/element';
+// @ts-ignore
+import { Component, Prop, Part, Test } from '@pictogrammers/element';
 
 import template from './world.html';
 import style from './world.css';
 
-const DEFAULT_MESSAGE = 'None';
+const DEFAULT_MESSAGE = 'Empty';
 
 @Component({
   selector: 'hello-world',

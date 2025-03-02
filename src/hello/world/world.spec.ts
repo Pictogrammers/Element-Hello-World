@@ -7,7 +7,7 @@ const HELLO_WORLD = 'hello-world';
 
 describe('hello-world', () => {
 
-  const DEFAULT_MESSAGE = 'None';
+  const DEFAULT_MESSAGE = 'Empty';
 
   beforeEach(() => {
     var c = document.createElement(HELLO_WORLD);
