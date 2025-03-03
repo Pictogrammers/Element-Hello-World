@@ -22,7 +22,7 @@
   "homepage": "https://github.com/Templarian/Element-Hello-World#readme",
   "dependencies": {},
   "devDependencies": {
-    "@pictogrammers/element": "0.0.43",
+    "@pictogrammers/element": "0.0.44",
     "@pictogrammers/element-webpack": "^0.1.42",
     "@pictogrammers/element-jest": "^0.1.7",
     "typescript": "^5.8.2"
