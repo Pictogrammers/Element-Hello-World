@@ -1,5 +1,4 @@
-// @ts-ignore
-import { Component, Part, Test } from '@pictogrammers/element';
+import { Component, Part } from '@pictogrammers/element';
 
 import template from './app.html';
 import style from './app.css';

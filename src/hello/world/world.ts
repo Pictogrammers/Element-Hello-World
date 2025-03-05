@@ -1,5 +1,4 @@
-// @ts-ignore
-import { Component, Prop, Part, Test } from '@pictogrammers/element';
+import { Component, Prop, Part } from '@pictogrammers/element';
 
 import template from './world.html';
 import style from './world.css';
