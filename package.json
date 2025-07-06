@@ -17,9 +17,9 @@
   "author": "Austin Andrews",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Templarian/Element-Hello-World/issues"
+    "url": "https://github.com/Pictogrammers/Element-Hello-World/issues"
   },
-  "homepage": "https://github.com/Templarian/Element-Hello-World#readme",
+  "homepage": "https://github.com/Pictogrammers/Element-Hello-World#readme",
   "dependencies": {},
   "devDependencies": {
     "@pictogrammers/element": "0.0.59",
