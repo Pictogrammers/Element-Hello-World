@@ -8,7 +8,7 @@
   "scripts": {
     "start": "element-start",
     "build": "element-build",
-    "test": "jest --no-cache"
+    "test": "node --experimental-vm-modules --disable-warning=ExperimentalWarning ./node_modules/jest/bin/jest --no-cache"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,10 @@
     "url": "https://github.com/Pictogrammers/Element-Hello-World/issues"
   },
   "homepage": "https://github.com/Pictogrammers/Element-Hello-World#readme",
-  "dependencies": {},
   "devDependencies": {
-    "@pictogrammers/element": "0.0.60",
-    "@pictogrammers/element-webpack": "^0.1.49",
-    "@pictogrammers/element-jest": "^0.1.8",
-    "typescript": "^5.8.2"
+    "@pictogrammers/element": "0.0.66",
+    "@pictogrammers/element-jest": "^0.1.10",
+    "@pictogrammers/element-webpack": "^0.1.51",
+    "typescript": "^5.9.3"
   }
 }
