@@ -3,7 +3,7 @@ import { Component, Part } from '@pictogrammers/element';
 import template from './app.html';
 import style from './app.css';
 
-import HelloWorld from './../world/world';
+import HelloWorld from '../world/world';
 
 @Component({
   selector: 'hello-app',
